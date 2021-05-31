@@ -1,37 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@650&display=swap');
 * {
   padding: 0;
   margin: 0;
   text-decoration: 0;
   list-style: none;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
+.container {
+  margin: auto;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.breadcrumbs .container {
+  margin: auto;
+  width: auto;
+  overflow: hidden;
+}
+nav .container {
+  display: flex;
+  margin: auto;
+  width: auto;
+  overflow: hidden;
+}
 nav {
   font-family: 'Poppins';
   font-weight: bold;
   height: 50px;
   width: 100%;
-  box-shadow: 0px 50px 20px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.09);
   filter: blur;
   display: flex;
+  overflow: hidden;
+
+  top: 0;
+  transition: 0.6s;
+  background: white;
 }
 
 .logo {
   color: black;
-  font-size: 15px;
+  font-size: 25px;
   line-height: 50px;
-  padding: 0 250px;
-  margin-left: -150px;
+  padding: 0 300px;
+  margin-left: -3.1rem;
 }
-
+nav ul {
+  margin-right: 190px;
+}
+ul li a {
+  color: black;
+}
 nav ul li {
   display: inline-block;
   line-height: 50px;
-  margin: 0px 25px;
-  color: black;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 60px;
+  margin-bottom: 25px;
 }
 .line {
   margin-top: 15px;
@@ -50,9 +79,183 @@ ul li.contact {
   width: 500px;
 }
 
+/* ------------------------------------- */
+/* section image bhukti mukti bakti */
+/* ------------------------------------- */
+.menu {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-text {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 35%;
+  overflow: hidden;
+}
+.menu-text h1 {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Nunito';
+  text-shadow: 0px 1px 1px black;
+  overflow: hidden;
+}
+
+.menu-text p {
+  font-size: 28px;
+  color: white;
+  font-family: 'Nunito';
+  text-shadow: 0px 1px 1px black;
+  overflow: hidden;
+}
 .menu img {
-  width: 2500px;
+  /* width: 2500px;
   height: 600px;
   background-color: black;
-  margin-left: 0px;
+  margin-left: 0px; */
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  overflow: hidden;
 }
+
+.explain-bangli {
+  background: white;
+  width: 100%;
+  height: 37rem;
+  overflow: hidden;
+}
+
+.bangli {
+  display: flex;
+  margin: auto;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bangli-text {
+  position: relative;
+  top: 4rem;
+  left: 1.5rem;
+}
+.bangli-text h1 {
+  font-size: 35px;
+}
+.bangli-text h1,
+p {
+  font-family: 'Poppins';
+  color: black;
+}
+.bangli img {
+  margin-left: 10rem;
+  margin-top: 35px;
+  width: 20rem;
+  margin-top: 7rem;
+}
+button:hover {
+  background-color: #6caace;
+}
+.button-explain {
+  background-color: #3d5f72;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+/* ------------------------------------- */
+/* tourism spot  */
+/* ------------------------------------- */
+.tourism-spot {
+  position: relative;
+  width: 100%;
+  height: 60rem;
+  background: white;
+}
+
+.tourism-items {
+  display: flex;
+  flex-direction: column;
+}
+.tourism-items h1 {
+  position: absolute;
+  width: 100%;
+  margin-top: 70px;
+  text-align: center;
+  font-family: 'Poppins';
+}
+.tourism-items-spot {
+  margin-top: 20rem;
+  position: relative;
+  margin: auto;
+  width: auto;
+  display: flex;
+  left: 8.5rem;
+}
+
+.items-1,
+.items-2,
+.items-3 {
+  margin-top: 13rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.items-1 img,
+.items-2 img,
+.items-3 img {
+  width: 60%;
+  border-radius: 2%;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.09);
+  transition: transform 0.1s;
+}
+
+.items-3 img:hover {
+  transform: scale(0.99);
+  cursor: pointer;
+}
+.items-2 img:hover {
+  transform: scale(0.99);
+  cursor: pointer;
+}
+.items-1 img:hover {
+  transform: scale(0.99);
+  cursor: pointer;
+}
+.items-1 h3,
+.items-2 h3,
+.items-3 h3 {
+  position: relative;
+  left: 4.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Poppins';
+}
+.items-1 p,
+.items-2 p,
+.items-3 p {
+  margin-top: 1rem;
+  width: 60%;
+  white-space: nowrap;
+  font-family: 'Poppins';
+  height: auto;
+  width: 60%;
+  font-size: 15px;
+  text-align: center;
+  justify-content: center;
+}
+/* footer */
+footer {
+  border-top: 1px solid rgba(233, 233, 233, 0.747);
+  text-align: center;
+}
+
+/*  responsive  */
