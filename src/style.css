@@ -8,11 +8,14 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
   margin: auto;
   width: auto;
-  height: auto;
+
   overflow: hidden;
 }
 .breadcrumbs .container {
@@ -198,7 +201,7 @@ button:hover {
   margin: auto;
   width: auto;
   display: flex;
-  left: 8.5rem;
+  left: 7.8rem;
 }
 
 .items-1,
@@ -254,8 +257,245 @@ button:hover {
 }
 /* footer */
 footer {
+  padding-top: 15px;
   border-top: 1px solid rgba(233, 233, 233, 0.747);
   text-align: center;
+  justify-content: center;
+  padding-bottom: 15px;
 }
 
 /*  responsive  */
+
+.form {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  left: 5rem;
+  margin-bottom: 8rem;
+}
+#subject {
+  width: 97.5%;
+}
+
+.form-control {
+  max-width: 600px;
+}
+
+.form,
+.form-control {
+  flex: 1;
+}
+.form-control .text-box {
+  height: 50px;
+  width: calc(50% - 10px);
+  padding: 12px;
+  margin-bottom: 20px;
+  font-family: 'Poppins';
+  border: 0.5 solid black;
+  border-radius: 5px;
+}
+
+.form-control textarea {
+  width: calc(50% - 10px);
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 97.5%;
+  font-family: 'Poppins';
+  border: 0.5px solid black;
+  border-radius: 5px;
+}
+
+.container h2 {
+  margin-bottom: 5rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins';
+  justify-content: center;
+}
+
+.button-contact {
+  background-color: #3d5f72;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+div.contact-info {
+  background: #3d5f72;
+  width: 25rem;
+  height: 30rem;
+  position: relative;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 25%;
+  top: 8%;
+}
+
+.contact-info p {
+  color: white;
+  font-family: 'Poppins';
+  position: relative;
+  top: 10%;
+  margin-top: 0.5rem;
+  justify-content: center;
+  left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .menu-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 35%;
+    overflow: hidden;
+  }
+  .menu-text h1 {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Nunito';
+    text-shadow: 0px 1px 1px black;
+    overflow: hidden;
+  }
+
+  .menu-text p {
+    font-size: 10px;
+    color: white;
+    font-family: 'Nunito';
+    text-shadow: 0px 1px 1px black;
+    overflow: hidden;
+  }
+  .menu img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .explain-bangli {
+    background: white;
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+  }
+
+  .bangli {
+    display: flex;
+    flex-flow: column-reverse;
+    margin: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .bangli-text {
+    position: relative;
+    top: 4rem;
+    left: 1.5rem;
+  }
+  .bangli-text h1 {
+    font-size: 30px;
+  }
+
+  .bangli-text p {
+    font-size: 13px;
+    position: relative;
+    height: 8rem;
+  }
+  .bangli-text h1,
+  p {
+    font-family: 'Poppins';
+    color: black;
+  }
+  .bangli img {
+    position: relative;
+    width: 40%;
+    left: -15%;
+  }
+
+  .tourism-spot {
+    height: 125rem;
+  }
+
+  .tourism-items-spot {
+    margin-top: 20rem;
+    position: relative;
+    margin: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    left: 7.5rem;
+  }
+
+  .items-1 img,
+  .items-2 img,
+  .items-3 img {
+    width: 60%;
+    position: relative;
+    border-radius: 2%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.09);
+    transition: transform 0.1s;
+  }
+
+  .items-3 img:hover {
+    transform: scale(0.99);
+    cursor: pointer;
+  }
+  .items-2 img:hover {
+    transform: scale(0.99);
+    cursor: pointer;
+  }
+  .items-1 img:hover {
+    transform: scale(0.99);
+    cursor: pointer;
+  }
+  .items-1 h3,
+  .items-2 h3,
+  .items-3 h3 {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 3.6rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    font-family: 'Poppins';
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    left: 0rem;
+  }
+
+  .form .contact-info {
+    position: relative;
+    right: 0rem;
+    width: 100%;
+  }
+  /* toursim spot */
+}
