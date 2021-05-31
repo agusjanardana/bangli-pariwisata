@@ -15,9 +15,9 @@
           <li>
             <a href="">Home</a>
           </li>
-          <li><a href="">About Bangli</a></li>
-          <li><a href="">Tourism Spot</a></li>
-          <li><a class="Contact" href="">Contact Us!</a></li>
+          <li><a href="#about-bangli">About Bangli</a></li>
+          <li><a href="#tourism-spot">Tourism Spot</a></li>
+          <li><a href="#contact" class="Contact" href="">Contact Us!</a></li>
         </ul>
         <div class="line">
           <div class="garis1"></div>
@@ -46,7 +46,7 @@
     <!-- Section sedikit penjelasan tentang bangli -->
     <section>
       <div class="container">
-        <div class="explain-bangli">
+        <div id="about-bangli" class="explain-bangli">
           <div class="bangli">
             <div class="bangli-text">
               <h1>Bangli</h1>
@@ -75,12 +75,12 @@
     <!-- section sedikit penjelasan tentang tourism spot -->
     <section>
       <div class="container">
-        <div class="tourism-spot">
+        <div id="tourism-spot" class="tourism-spot">
           <div class="tourism-items">
             <h1>Tourism Spot</h1>
             <div class="tourism-items-spot">
               <div class="items-1">
-                <h3>Batur</h3>
+                <h3>Gunung Batur</h3>
                 <img
                   src="src/images/items-1.png"
                   onclick="location.href='https://www.water-sport-bali.com/mendaki-gunung-batur/'"
@@ -128,6 +128,57 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contanct us  -->
+    <section>
+      <div class="container">
+        <h2>Contact Us</h2>
+
+        <div class="form">
+          <div id="contact" class="form-control">
+            <input
+              type="text"
+              name=" name"
+              class="text-box"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="text-box"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="text-box"
+              placeholder="Subject"
+            />
+            <textarea
+              name="Message"
+              id="message"
+              cols="47.5"
+              rows="10"
+              placeholder="Messages"
+            ></textarea>
+            <button class="button-contact" type="submit">Send</button>
+          </div>
+
+          <div class="contact-info">
+            <img src="src/images/agus.png" alt="" />
+
+            <p>Nama: I Gde Bagus Janardana Abasan</p>
+            <p>Alamat : Bangli, Bali Indonesia</p>
+
+            <p>Contact : 08123111111</p>
+            <p>Lorem Ipsunm</p>
           </div>
         </div>
       </div>
