@@ -174,6 +174,9 @@ button:hover {
   margin-top: 5px;
 }
 
+#nav-tog {
+  position: absolute;
+}
 /* ------------------------------------- */
 /* tourism spot  */
 /* ------------------------------------- */
@@ -439,6 +442,7 @@ div.contact-info {
 
   .tourism-spot {
     height: 125rem;
+    overflow: hidden;
   }
 
   .tourism-items-spot {
@@ -497,5 +501,59 @@ div.contact-info {
     right: 0rem;
     width: 100%;
   }
-  /* toursim spot */
+
+  .form .contact-info img {
+    position: relative;
+    left: 30%;
+  }
+  .form-control {
+    position: relative;
+    left: 1%;
+  }
+
+  /* ----------------------- */
+  /* nvabar*/
+  /* ----------------------- */
+
+  nav .container .chek {
+    float: none;
+    z-index: 1;
+    background: rgb(250, 250, 251);
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: auto;
+    margin: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    bottom: 100%;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  nav .container ul li {
+    overflow: hidden;
+    margin-right: 45px;
+  }
+  .logo {
+    font-size: 19px;
+    position: relative;
+    justify-content: center;
+    right: 2rem;
+    top: 2px;
+  }
+
+  .line {
+    display: block;
+    position: absolute;
+    left: 25rem;
+    cursor: pointer;
+  }
+
+  .container :checked ~ .chek {
+    bottom: 40%;
+  }
 }
